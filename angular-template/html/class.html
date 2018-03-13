@@ -1,7 +1,7 @@
 <div class="container-overview">
-  <ul class="chips">
+  <ul class="chips" ht-if="restrict">
     <li class="chip" ht-if="directiveScope">{{ directiveScope }}</li>
-    <li class="chip" ht-if="restrict" ht-repeat="rest in restrict">{{rest}}</li>
+    <li class="chip" ht-repeat="rest in restrict">{{rest}}</li>
   </ul>
 
   <div class="clearfix"></div>
